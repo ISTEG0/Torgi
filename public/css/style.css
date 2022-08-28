@@ -568,7 +568,12 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .panel .answer-list {
-  padding-left: 48px;
+  padding-left: 75px;
+}
+@media (max-width: 425px) {
+  .panel .answer-list {
+    padding-left: 50px;
+  }
 }
 .panel .answer-list .answer-list-item {
   list-style-position: inside;
@@ -579,6 +584,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   line-height: 35px;
   color: #464646;
+}
+@media (max-width: 425px) {
+  .panel .answer-list .answer-list-item {
+    font-size: 16px;
+  }
 }
 
 .panel > div {
