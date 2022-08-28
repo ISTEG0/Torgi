@@ -1,0 +1,175 @@
+.footer {
+    padding-bottom: 121px;
+
+    @media (max-width: 425px) {
+        padding-bottom: 60px;
+    }
+}
+.footer-container {
+    padding-top: 100px;
+    background-image: url('../images/footer/shadow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (max-width: 425px) {
+        padding-top: 50px;
+    }
+}
+
+.footer-top {
+    padding-bottom: 52px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 425px) {
+        padding-bottom: 26px;
+    }
+    .footer-top__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+
+        @media (max-width:1081px) {
+            justify-content: center;
+        }
+    }
+
+    .footer-top__list-item {
+    }
+
+    .footer-btn {
+        width: 100%;
+        .footer-btn__link {
+            display: block;
+            font-family: $Display;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 15px 39px;
+            background-color: #08A652;
+            border-radius: 8px;
+            transition-duration: 0.2s;
+
+            &:hover {
+                transition-duration: 0.2s;
+                background-color: #116d3c;
+            }
+        }
+    }
+
+    .footer-feedback {
+        display: flex;
+        align-items: center;
+
+        a {
+            display: block;
+        }
+
+        @media (max-width: 416px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        .feedback-phone {
+            margin-right: 42px;
+
+            @media (max-width: 416px) {
+                margin-right: 0;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+.footer-bottom {
+    padding-top: 45px;
+
+    @media (max-width: 425px) {
+        padding-top: 20px;
+    }
+
+    .footer-bootom__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+
+        @media (max-width: 683px) {
+            justify-content: center;
+        }
+    }
+
+    .footer-bootom__list-item {
+
+    }
+
+    .footer-copyright {
+            font-family: $Display;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 150%;
+            color: #464646;
+            opacity: 0.3;
+    }
+
+    .footer-confidentiality {
+            display: block;
+            font-family: $Display;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 117%;
+            color: #464646;
+            opacity: 0.3;
+            padding-bottom: 5px;
+            background-image: linear-gradient(to right, #464646 10%, rgba(255, 255, 255, 0) 0%);
+            background-position: bottom;
+            background-size: 8px 1px;
+            background-repeat: repeat-x;
+            transition-duration: 0.2s;
+            transition-duration: 0.2s;
+
+            &:hover {
+                transition-duration: 0.2s;
+                opacity: 1;
+            }
+    }
+
+    .footer-developed {
+        font-family: $Display;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 150%;
+        color: #111111;
+
+        a {
+            color: #1d726f;
+            font-weight: 600;
+            padding-bottom: 3px;
+            background-image: linear-gradient(to right, #1d726f 10%, rgba(255, 255, 255, 0) 0%);
+            background-position: bottom;
+            background-size: 8px 1px;
+            background-repeat: repeat-x;
+            transition-duration: 0.2s;
+
+            &:hover {
+                transition-duration: 0.2s;
+                color: #fe7679;
+                background-image: linear-gradient(to right, #fe7679 10%, rgba(255, 255, 255, 0) 0%);
+            }
+        }
+    }
+}

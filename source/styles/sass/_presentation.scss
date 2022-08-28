@@ -1,0 +1,300 @@
+.presentation {
+    margin-bottom: 106px;
+
+    @media (max-width: 425px) {
+        margin-bottom: 53px;
+    }
+}
+
+.presentation-block {
+    display: flex;
+    gap: 20px 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .presentation-form-container {
+        padding-top: 25px;
+    }
+
+    .presentation-content {
+        max-width: 659px;
+
+        .presentation-content__title {
+            margin-bottom: 24px;
+        }
+    
+        .presentation-content__title-text {
+            font-family: $Display;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 54px;
+            line-height: 120%;
+            color: #08A652;
+
+            span {
+                color: #262626
+            }
+
+            @media (max-width: 425px) {
+                font-size: 32px;
+                text-align: center;
+            }
+
+        }
+    
+        .presentation-content__description {
+            margin-bottom: 42px;
+        }
+
+        .presentation-content__description-text {
+            font-family: $Display;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 21px;
+            line-height: 31px;
+            color: #262626;
+
+            @media (max-width: 425px) {
+                text-align: center;
+            }
+        }
+    
+        .presentation-content__plus {
+            
+        }
+    
+        .plus {
+    
+        }
+    
+        .plus__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px 19px;
+
+            @media (max-width: 1088px) {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    
+        .item-high {
+            min-height: 158px;
+            padding: 22px 0 27px 0;
+        }
+
+        .item-short {
+            min-height: 100px;
+            padding: 22px 0;
+        }
+
+        .item-paint {
+            background-color: #F5F5FF;
+        }
+
+        .plus__list-item {
+            display: flex;
+            width: 100%;
+            max-width: 320px;
+            justify-content: center;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+        }
+    
+        .plus__list-item-icon {
+            padding-top: 3px;
+            margin-right: 18px;
+        }
+    
+        .plus__list-item-text {
+            max-width: 206px;
+            font-family: $Display;
+            font-style: normal;
+            font-weight: 250;
+            font-size: 16px;
+            line-height: 28px;
+            color: #262626;
+
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+
+    .presentation-form {
+        background-color: #EFF3F6;
+        border-radius: 8px;
+        padding: 52px 65px 25px 65px;
+
+        @media (max-width: 425px) {
+            padding: 26px 32.5px 12.5px 32.5px;
+        }
+
+
+        .form {
+            width: 100%;
+            max-width: 330px;
+            input {
+                padding: 15px 25px 15px 25px;
+                border-radius: 8px;
+                font-family: $Manrope;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 150%;
+                color: #464646;
+                width: 100%;
+
+                @media (max-width: 425px) {
+                    padding: 15px 12.5px 15px 12.5px;
+                }
+                
+            }
+        }
+
+        .form__title {
+            margin-bottom: 16px;
+        }
+
+        .form__title-text {
+            font-family: $Display;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 120%;
+            color: #262626;
+        }
+
+        .form__input {
+                margin-bottom: 14px;
+        }
+
+        .form__input-title {
+            font-family: $Display;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 150%;
+            color: #464646;
+            margin-bottom: 10px;
+        }
+
+
+        .input-phone {
+
+        }
+
+        .input-text {
+
+        }
+
+        .form__feedback {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 10px;
+            margin-bottom: 27px;
+        }
+
+        .form__feedback-title {
+            max-width: 86px;
+            // margin-right: 28px;
+        }
+
+        .form__feedback-title-text {
+            font-family: $Display;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 150%;
+            color: #464646;
+        }
+
+        .form__feedback-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // cursor: pointer;
+        }
+
+        .form__feedback-link {
+            position: relative;
+            text-align: center;
+            opacity: 0.50;
+            cursor: pointer;
+
+            .checkbox {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                top: 0;
+                right: -6px;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+            .checkbox-telegram {
+                width: 65px;
+                height: 60px;
+                right: 0;
+            }
+        }
+
+        .link-telegram, .link-sms{
+            padding-top: 3px;
+        }
+
+        .checked-link {
+            opacity: 1;
+        }
+
+        .form__feedback-icon-name {
+            font-family: $Manrope;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 150%;
+            color: #464646;
+        }
+
+        .form__btn {
+            margin-bottom: 15px;
+
+            button {
+                font-family: $Display;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 150%;
+                text-align: center;
+                color: #FFFFFF;
+                background-color: #08A652;
+                border-radius: 8px;
+                padding: 15px 10px;
+                width: 100%;
+                transition-duration: 0.2s;
+                
+                &:hover {
+                    transition-duration: 0.2s;
+                    background-color: #116d3c;
+                }
+            }
+        }
+
+        .form__info-spam {
+
+        }
+
+        .form__info-spam-text {
+            font-family: $Display;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 150%;
+            text-align: center;
+            text-indent: 10px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+

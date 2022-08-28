@@ -1,0 +1,128 @@
+
+.answers {
+    padding-bottom: 118px;
+
+    @media (max-width: 768px) {
+        padding-bottom: 59px;
+    }
+}
+
+.answers-title {
+    padding-bottom: 66px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    .answers-title__text {
+        font-family: $Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 120%;
+        text-align: center;
+        color: #262626;
+
+        @media (max-width: 425px) {
+            font-size: 32px;
+        }
+    }
+}
+
+//acardion
+.accordionn {
+    position: relative;
+    display: flex;
+    column-gap: 46px;
+    color: #fff;
+    cursor: pointer;
+    padding: 30px 47px 35px 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 17px;
+    line-height: 30px;
+    transition: 0.2s;
+
+    @media (max-width:425px) {
+        column-gap: 23px;
+        padding: 14px 47px 15px 10px;
+
+    }
+
+    .question-number {
+        padding-top: 10px;
+        font-family: $Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+        color: #08A652;
+    }
+
+    .question {
+        font-family: $Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 140%;
+        color: #262626;
+        padding-right: 5px;
+
+        @media (max-width: 425px) {
+            font-size: 30px;
+        }
+
+        @media (max-width: 375px) {
+            font-size: 26px;
+        }
+
+        @media (max-width: 320px) {
+            font-size: 24px;
+        }
+    }
+}
+
+
+.accordionn:after {
+    content: '\002B';
+    transition-duration: 0.2s;
+    position: absolute;
+    color: #262626;
+    font-weight: 600;
+    right: 20px;
+    top: 45px;
+    font-size: 45px;
+}
+
+.accordionn.active:after {
+    content: "\2212";
+    transition-duration: 0.2s;
+    color: #08A652;
+}
+
+.panel {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin:0;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    .answer-list {
+        padding-left: 48px;
+        .answer-list-item {
+            list-style-position: inside;
+            list-style-type: disc;
+            font-family: $Manrope;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 35px;
+            color: #464646;
+        }
+    }
+}
+
+.panel > div {
+    padding:6px 10px;
+}
