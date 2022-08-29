@@ -23,10 +23,7 @@ jQuery(function($){
 
 $(function() {
   $('.form__feedback-link').click(function(){
-  if($(this).hasClass('checked-link')){
-      $(this).removeClass('checked-link');
-    } else{
+      $('.form__feedback-link').removeClass('checked-link');
       $(this).addClass('checked-link');
-    }
   })
 })

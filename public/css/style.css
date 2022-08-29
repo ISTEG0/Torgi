@@ -114,6 +114,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #08A652;
 }
 
+@media (max-width: 425px) {
+  .logo-header {
+    font-size: 20px;
+  }
+}
+
 .title .title__text {
   font-family: "Noto Sans Display", sans-serif;
   font-style: normal;
@@ -124,9 +130,9 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   color: #464646;
 }
-@media (max-width: 393px) {
+@media (max-width: 576px) {
   .title .title__text {
-    text-align: center;
+    display: none;
   }
 }
 
@@ -166,12 +172,21 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 10px 20px;
 }
 @media (max-width: 953px) {
   .header-block .header-block__list {
     justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .header-block .header-block__list {
+    gap: 10px 10px;
+  }
+}
+@media (max-width: 375px) {
+  .header-block .header-block__list {
+    gap: 10px 5px;
   }
 }
 .header-block .header-btn {
@@ -180,6 +195,7 @@ h1, h2, h3, h4, h5, h6 {
 .header-block .header-btn .header-btn__link {
   width: 100%;
   max-width: 241px;
+  min-width: 171px;
   display: block;
   font-family: "Noto Sans Display", sans-serif;
   font-style: normal;
@@ -193,6 +209,24 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px 39px;
   transition-duration: 0.2s;
 }
+@media (max-width: 893px) {
+  .header-block .header-btn .header-btn__link {
+    padding: 10px 5px;
+  }
+}
+@media (max-width: 425px) {
+  .header-block .header-btn .header-btn__link {
+    min-width: 150px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  .header-block .header-btn .header-btn__link {
+    min-width: 130px;
+    font-size: 10px;
+    padding: 10px 3px;
+  }
+}
 .header-block .header-btn .header-btn__link:hover {
   transition-duration: 0.2s;
   background-color: #08A652;
@@ -205,8 +239,46 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
   }
 }
+@media (max-width: 980px) {
+  .header-block .header-feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .header-block .header-feedback a {
   display: block;
+}
+@media (max-width: 980px) {
+  .header-block .header-feedback .feedback-phone-header {
+    display: none;
+  }
+}
+.header-block .header-feedback .feedback-phone-icon {
+  display: none;
+}
+@media (max-width: 980px) {
+  .header-block .header-feedback .feedback-phone-icon {
+    display: block;
+  }
+}
+@media (max-width: 425px) {
+  .header-block .header-feedback .feedback-phone-icon {
+    display: block;
+  }
+  .header-block .header-feedback .feedback-phone-icon img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .header-block .header-feedback .feedback-phone-icon {
+    display: block;
+  }
+  .header-block .header-feedback .feedback-phone-icon img {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .main {
@@ -248,9 +320,19 @@ h1, h2, h3, h4, h5, h6 {
 .presentation-block .presentation-content .presentation-content__title-text span {
   color: #262626;
 }
-@media (max-width: 425px) {
+@media (max-width: 980px) {
   .presentation-block .presentation-content .presentation-content__title-text {
-    font-size: 32px;
+    font-size: 46px;
+  }
+}
+@media (max-width: 768px) {
+  .presentation-block .presentation-content .presentation-content__title-text {
+    font-size: 38px;
+  }
+}
+@media (max-width: 576px) {
+  .presentation-block .presentation-content .presentation-content__title-text {
+    font-size: 30px;
     text-align: center;
   }
 }
@@ -275,7 +357,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
   gap: 20px 19px;
 }
-@media (max-width: 1088px) {
+@media (max-width: 680px) {
   .presentation-block .presentation-content .plus__list {
     flex-direction: column;
     align-items: center;
@@ -283,23 +365,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 .presentation-block .presentation-content .item-high {
   min-height: 158px;
-  padding: 22px 0 27px 0;
+  padding: 20px 0 27px 30px;
 }
 .presentation-block .presentation-content .item-short {
   min-height: 100px;
-  padding: 22px 0;
+  padding: 20px 0 22px 30px;
 }
-.presentation-block .presentation-content .item-paint {
+.presentation-block .presentation-content .item-paint--blue {
   background-color: #F5F5FF;
+}
+.presentation-block .presentation-content .item-paint--green {
+  background-color: #F0FCF0;
 }
 .presentation-block .presentation-content .plus__list-item {
   display: flex;
   width: 100%;
   max-width: 320px;
-  justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.05);
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
+}
+@media (max-width: 320px) {
+  .presentation-block .presentation-content .plus__list-item {
+    padding-left: 20px;
+  }
 }
 .presentation-block .presentation-content .plus__list-item-icon {
   padding-top: 3px;
@@ -397,11 +486,16 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   opacity: 0.5;
   cursor: pointer;
+  transition-duration: 0.2s;
+}
+.presentation-block .presentation-form .form__feedback-link:hover {
+  transition-duration: 0.2s;
+  opacity: 1;
 }
 .presentation-block .presentation-form .form__feedback-link .checkbox {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 65px;
   top: 0;
   right: -6px;
   opacity: 0;
@@ -409,7 +503,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .presentation-block .presentation-form .form__feedback-link .checkbox-telegram {
   width: 65px;
-  height: 60px;
+  height: 65px;
   right: 0;
 }
 .presentation-block .presentation-form .link-telegram, .presentation-block .presentation-form .link-sms {
@@ -480,9 +574,19 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   color: #262626;
 }
-@media (max-width: 425px) {
+@media (max-width: 980px) {
+  .answers-title .answers-title__text {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
   .answers-title .answers-title__text {
     font-size: 32px;
+  }
+}
+@media (max-width: 576px) {
+  .answers-title .answers-title__text {
+    font-size: 24px;
   }
 }
 
@@ -525,19 +629,19 @@ h1, h2, h3, h4, h5, h6 {
   color: #262626;
   padding-right: 5px;
 }
-@media (max-width: 425px) {
+@media (max-width: 576px) {
   .accordionn .question {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 @media (max-width: 375px) {
   .accordionn .question {
-    font-size: 26px;
+    font-size: 20px;
   }
 }
 @media (max-width: 320px) {
   .accordionn .question {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
@@ -550,6 +654,17 @@ h1, h2, h3, h4, h5, h6 {
   right: 20px;
   top: 45px;
   font-size: 45px;
+}
+@media (max-width: 425px) {
+  .accordionn:after {
+    font-size: 30px;
+    top: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .accordionn:after {
+    top: 20px;
+  }
 }
 
 .accordionn.active:after {

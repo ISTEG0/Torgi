@@ -15,7 +15,7 @@
                     <ul class="header-block__list">
                         <li class="header-block__list-item">
                             <div class="logo">
-                                <a href="" class="logo__link">torgi.plus</a>
+                                <a href="" class="logo__link logo-header">torgi.plus</a>
                             </div>
                         </li>
                         <li class="header-block__list-item">
@@ -32,7 +32,10 @@
                         </li>
                         <li class="header-block__list-item">
                             <div class="header-feedback">
-                                <a href="tel:+7 (929) 000-00-00" class="feedback-phone">+7 (929) 000-00-00</a>
+                                <a href="tel:+7 (929) 000-00-00" class="feedback-phone-icon">
+                                    <img src="./images/header/iconPhone.svg" alt="иконка телефона">
+                                </a>
+                                <a href="tel:+7 (929) 000-00-00" class="feedback-phone feedback-phone-header">+7 (929) 000-00-00</a>
                                 <a href="mailto:info@torgi.plus" class="feedback-email">info@torgi.plus</a>
                             </div>
                         </li>
@@ -56,7 +59,7 @@
                         </div>
                         <div class="presentation-content__plus plus">
                             <ul class="plus__list">
-                                <li class="plus__list-item item-high item-paint">
+                                <li class="plus__list-item item-high item-paint--blue">
                                     <div class="plus__list-item-icon">
                                         <img src="./images/presintation/plus/iconOne.svg" alt="Первая иконка">
                                     </div>
@@ -86,7 +89,7 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="plus__list-item item-short item-paint">
+                                <li class="plus__list-item item-short item-paint--green">
                                     <div class="plus__list-item-icon">
                                         <img src="./images/presintation/plus/iconFour.svg" alt="Четвертая">
                                     </div>
@@ -126,38 +129,29 @@
                                     <p class="form__input-title">
                                         Номер торгов
                                     </p>
-                                    <input type="number" name="number-area" class="input-text">
+                                    <input type="text" name="number-area" class="input-text">
                                 </div>
                                 <div class="form__feedback">
                                     <div class="form__feedback-title">
                                         <p class="form__feedback-title-text">
-                                            Выберите удобный способ связи:
+                                            Выберите способ связи:
                                         </p>
                                     </div>
                                     <div class="form__feedback-icon">
-                                        <div href="#" class="form__feedback-link">
-                                            <input type="checkbox" class="checkbox" name="signal">
+                                        <div href="#" class="form__feedback-link ">
+                                            <input type="radio" class="checkbox" name="network" value="signal">
                                             <img src="./images/presintation/form/signal.svg" alt="">
                                             <p class="form__feedback-icon-name">
-                                                Signal
+                                                Signa
                                             </p>
                                         </div>
                                     </div>
                                     <div class="form__feedback-icon">
-                                        <div href="#" class="form__feedback-link link-telegram">
-                                            <input type="checkbox" class="checkbox checkbox-telegram" name="telegram">
+                                        <div href="#" class="form__feedback-link link-telegram checked-link">
+                                            <input type="radio" class="checkbox checkbox-telegram" checked name="network" value="telegram">
                                             <img src="./images/presintation/form/telegram.svg" alt="">
                                             <p class="form__feedback-icon-name">
                                                 Telegram
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="form__feedback-icon">
-                                        <div href="#" class="form__feedback-link link-sms">
-                                            <input type="checkbox" class="checkbox" name="sms">
-                                            <img src="./images/presintation/form/sms.svg" alt="">
-                                            <p class="form__feedback-icon-name">
-                                                Sms
                                             </p>
                                         </div>
                                     </div>
@@ -411,7 +405,7 @@
                         </li>
                         <li class="footer-bootom__list-item">
                             <p class="footer-developed">
-                                Разработано в <a href="https://yak-studio.ru/">yak-studio.ru</a>
+                                Разработано в <a href="https://yak-studio.ru/" target="_blank">yak-studio.ru</a>
                             </p>
                         </li>
                     </ul>

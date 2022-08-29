@@ -35,10 +35,23 @@
                 color: #262626
             }
 
-            @media (max-width: 425px) {
-                font-size: 32px;
+            @media (max-width: 980px) {
+                font-size: 46px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 38px;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 30px;
                 text-align: center;
             }
+
+            // @media (max-width: 425px) {
+            //     font-size: 32px;
+            //     text-align: center;
+            // }
 
         }
     
@@ -72,7 +85,8 @@
             flex-wrap: wrap;
             gap: 20px 19px;
 
-            @media (max-width: 1088px) {
+
+            @media (max-width: 680px) {
                 flex-direction: column;
                 align-items: center;
             }
@@ -80,26 +94,33 @@
     
         .item-high {
             min-height: 158px;
-            padding: 22px 0 27px 0;
+            padding: 20px 0 27px 30px;
         }
 
         .item-short {
             min-height: 100px;
-            padding: 22px 0;
+            padding: 20px 0 22px 30px;
         }
 
-        .item-paint {
+        .item-paint--blue {
             background-color: #F5F5FF;
+        }
+
+        .item-paint--green {
+            background-color: #F0FCF0;;
         }
 
         .plus__list-item {
             display: flex;
             width: 100%;
             max-width: 320px;
-            justify-content: center;
             border: 1px solid rgba(0, 0, 0, 0.05);
             box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
             border-radius: 8px;
+
+            @media (max-width: 320px) {
+                padding-left: 20px;
+            }
         }
     
         .plus__list-item-icon {
@@ -214,7 +235,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            // cursor: pointer;
         }
 
         .form__feedback-link {
@@ -222,11 +242,17 @@
             text-align: center;
             opacity: 0.50;
             cursor: pointer;
+            transition-duration: 0.2s;
+
+            &:hover {
+                transition-duration: 0.2s;
+                opacity: 1;
+            }
 
             .checkbox {
                 position: absolute;
-                width: 50px;
-                height: 50px;
+                width: 65px;
+                height: 65px;
                 top: 0;
                 right: -6px;
                 opacity: 0;
@@ -235,7 +261,7 @@
 
             .checkbox-telegram {
                 width: 65px;
-                height: 60px;
+                height: 65px;
                 right: 0;
             }
         }

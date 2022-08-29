@@ -20,8 +20,16 @@
         text-align: center;
         color: #262626;
 
-        @media (max-width: 425px) {
+        @media (max-width: 980px) {
+            font-size: 40px;
+        }
+
+        @media (max-width: 768px) {
             font-size: 32px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 24px;
         }
     }
 }
@@ -67,16 +75,16 @@
         color: #262626;
         padding-right: 5px;
 
-        @media (max-width: 425px) {
-            font-size: 30px;
+        @media (max-width: 576px) {
+            font-size: 22px;
         }
 
         @media (max-width: 375px) {
-            font-size: 26px;
+            font-size: 20px;
         }
 
         @media (max-width: 320px) {
-            font-size: 24px;
+            font-size: 18px;
         }
     }
 }
@@ -91,6 +99,14 @@
     right: 20px;
     top: 45px;
     font-size: 45px;
+
+    @media (max-width: 425px) {
+        font-size: 30px;
+        top: 30px;
+    }
+    @media (max-width: 375px) {
+        top: 20px;
+    }
 }
 
 .accordionn.active:after {
