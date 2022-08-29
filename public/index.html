@@ -26,7 +26,7 @@
                             </div>
                         </li>
                         <li class="header-block__list-item ">
-                            <div class="header-btn">
+                            <div class="header-btn popup-open">
                                 <a href="" class="header-btn__link">Получить консультацию</a>
                             </div>
                         </li>
@@ -114,7 +114,7 @@
                                     <p class="form__input-title">
                                         Телефон
                                     </p>
-                                    <input type="tel" class="input-phone"   
+                                    <input tabindex="1" type="tel" class="input-phone"   
                                     placeholder="+7 905 064 50 50"
                                     maxlength="11"
                                     name="phone" id="phone">
@@ -123,13 +123,13 @@
                                     <p class="form__input-title">
                                         Торговая площадка
                                     </p>
-                                    <input type="text" name="name-area" class="input-text">
+                                    <input tabindex="2" type="text" name="name-area" class="input-text">
                                 </div>
                                 <div class="form__input">
                                     <p class="form__input-title">
                                         Номер торгов
                                     </p>
-                                    <input type="text" name="number-area" class="input-text">
+                                    <input tabindex="3" type="text" name="number-area" class="input-text">
                                 </div>
                                 <div class="form__feedback">
                                     <div class="form__feedback-title">
@@ -157,7 +157,7 @@
                                     </div>
                                 </div>
                                 <div class="form__btn">
-                                    <button type="submit">Узнать стоимость победы</button>
+                                    <button tabindex="4" type="submit">Узнать стоимость победы</button>
                                 </div>
                                 <div class="form__info-spam">
                                     <p class="form__info-spam-text">
@@ -381,7 +381,7 @@
                             </div>
                         </li>
                         <li class="footer-top__list-item">
-                            <div class="footer-btn">
+                            <div class="footer-btn popup-open">
                                 <a href="" class="footer-btn__link">Получить консультацию</a>
                             </div>
                         </li>
@@ -412,6 +412,19 @@
                 </div>
             </div>
         </footer>
+        <div class="modal popup-fade">
+            <div class="overlay popup">
+                <form action="" class="form-modal ">
+                    <div class="popup-close"></div>
+                    <input tabindex="1" type="text" name="name" placeholder="Имя">
+                    <input tabindex="2" type="tel" class="input-phone"   
+                    placeholder="+7 905 064 50 50"
+                    maxlength="11"
+                    name="phone" id="phone-modal">
+                    <button tabindex="3" type="submit">Получить консультацию</button>
+                </form>
+            </div>
+        </div>
     </div>
 
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>

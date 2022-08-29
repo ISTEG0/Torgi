@@ -18,7 +18,7 @@ for (i = 0; i < acc.length; i++) {
 //mask phone
 jQuery(function($){
   $("#phone").mask("+7(999) 999-9999");
-
+  $("#phone-modal").mask("+7(999) 999-9999");
 });
 
 $(function() {
@@ -26,4 +26,34 @@ $(function() {
       $('.form__feedback-link').removeClass('checked-link');
       $(this).addClass('checked-link');
   })
+
+   //modal
+  $('.popup-open').click(function() {
+		$('.popup-fade').fadeIn(150);
+        $('body').css('overflow-y','hidden');
+		return false;
+	});
+
+    // Клик по ссылке "Закрыть".
+	$('.popup-close').click(function() {
+		$(this).parents('.popup-fade').fadeOut(150);
+        $('body').css('overflow-y','auto');
+		return false;
+	});        
+
+	// Закрытие по клавише Esc.
+	$(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('.popup-fade').fadeOut();
+		}
+	});
+	
+	// Клик по фону, но не по окну.
+	$('.popup-fade').click(function(e) {
+		if ($(e.target).closest('.popup').length == 0) {
+			$(this).fadeOut();					
+		}
+	});	
+
 })
